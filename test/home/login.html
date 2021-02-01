@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/372f53c69c.js" crossorigin="anonymous"></script>
+    <style>
+        .login-top{
+            text-align: center;
+            margin: 65px 0 95px 0;
+        }
+        .login{
+            display: inline-block;
+        }
+        .find-box{
+            padding-top: 15px;
+            padding-bottom: 75px;
+
+        }
+        .id-find, .pw-find{
+            color: black;
+        }
+        .id-find{
+            padding-right: 20px;
+        }
+        .pw-find{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container login-top">
+        <h3>로그인</h3>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control login col-4" id="id" name="id" placeholder="아이디">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control login col-4" id="pw" name="pw" placeholder="비밀번호">
+          </div>
+          <button type="submit" class="btn btn-primary col-4">로그인</button>
+          <div class="find-box">
+            <a href="#" class="id-find">아이디 찾기</a>
+            <a href="#" class="pw-find">비밀번호 찾기</a>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

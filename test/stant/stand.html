@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가판대</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/372f53c69c.js" crossorigin="anonymous"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <style>
+        .stand-top{
+            padding: 40px 100px 80px 100px;
+        }
+        .stand-top::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .img-box{
+            display:inline-block;
+            width: 304px;
+            height: 236px;
+            float: left;
+            padding-right: 20px;
+        }
+        .content-box{
+            float: left;
+        }
+        .stand-title{
+            display: block;
+        }
+        .stand-title>.btn{
+            font-size: 11px;
+            padding: 0;
+            margin-left: 5px;
+        }
+        .stand-introduce-box{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container stand-top">
+        <div class="img-box">
+            <img src="" class="rounded" alt="가판대 대표 이미지" width="304px" height="236px">
+        </div>
+        <div class="content-box">
+            <div class="stand-title">
+                <input type="text">
+                <button type="button" class="btn btn-light">가판대명수정</button>
+            </div>
+            <div class="stand-introduce-box">
+                <input type="text" class="stand-introduce">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
