@@ -11,8 +11,9 @@
     <script src="https://kit.fontawesome.com/372f53c69c.js" crossorigin="anonymous"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <style>
-        .stand-top{
-            padding: 40px 100px 80px 100px;
+        .stand-top,
+        .stand-middle{
+            padding: 40px 100px 20px 100px;
         }
         .stand-top::after{
             content: '';
@@ -29,33 +30,111 @@
         .content-box{
             float: left;
         }
-        .stand-title{
+        .stand-title-box, .stand-introduce-box{
             display: block;
-        }
-        .stand-title>.btn{
-            font-size: 11px;
-            padding: 0;
-            margin-left: 5px;
+            margin-left: 20px;
         }
         .stand-introduce-box{
-            display: block;
+            margin-top: 15px;
         }
+        .stand-title-box>.btn,
+        .stand-introduce-box .stand-btn-box>.btn{
+            font-size: 13px;
+            padding: 2px;
+            margin-left: 5px;
+        }
+        .stand-introduce-box .stand-btn-box>.btn{
+            margin-top: 10px;
+        }
+        .stand-introduce-box .stand-btn-box>.btn-primary{
+            margin-left: 15px;
+        }
+        .stand-title, .stand-introduce{
+            border: none;
+            outline: none;
+        }
+        .stand-introduce{
+            width: 450px;
+            height: 150px;
+            vertical-align: right;
+        }
+        .stand-introduce-box .confirm{
+            display: inline-block;
+            margin: 0;
+            height: 150px;
+            font-size: 16px;
+            margin-left: -4px;
+            border-radius: 0;
+        }
+        .modify-box{
+            display: inline-block;
+            border: 1px solid #f8f9fa;
+        }
+
     </style>
 </head>
 <body>
     <div class="container stand-top">
         <div class="img-box">
-            <img src="" class="rounded" alt="가판대 대표 이미지" width="304px" height="236px">
+            <img src="http://res.heraldm.com/phpwas/restmb_idxmake.php?idx=621&simg=/content/image/2020/03/10/20200310000043_0.jpg" class="rounded" alt="가판대 대표 이미지" width="304px" height="236px">
         </div>
         <div class="content-box">
-            <div class="stand-title">
-                <input type="text">
+            <div class="stand-title-box">
+                <input type="text" class="stand-title" value="qweqwe123의가판대" readonly maxlength="15">
                 <button type="button" class="btn btn-light">가판대명수정</button>
             </div>
             <div class="stand-introduce-box">
-                <input type="text" class="stand-introduce">
+                <div class="modify-box">
+                    <input type="text" class="stand-introduce" value="내용" readonly>
+                </div>
+                <div class="modify-box" style="display: none;">
+                    <input type="text" class="stand-introduce" value="내용">
+                    <button type="button" class="btn btn-light confirm">확인</button>
+                </div>
+                <div class="stand-btn-box">
+                    <button type="button" class="btn btn-light">가판대소개글수정</button>
+                    <button type="button" class="btn btn-light">가판대이미지수정</button>
+                    <button type="button" class="btn btn-primary">상품등록</button>
+                </div>
             </div>
         </div>
     </div>
+    <div class="container stand-middle">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">판매목록</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">상품관리</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">거래후기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu3">문의사항</a>
+          </li>
+        </ul>
+      
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="home" class="container tab-pane active"><br>
+            <h3>판매목록</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="menu1" class="container tab-pane fade"><br>
+            <h3>상품관리</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="menu2" class="container tab-pane fade"><br>
+            <h3>거래후기</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+          <div id="menu3" class="container tab-pane fade"><br>
+            <h3>문의사항</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
