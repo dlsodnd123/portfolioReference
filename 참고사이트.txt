@@ -4,3 +4,6 @@
 
 스프링 Spring + 웹소켓 WebSocket 채팅 초간단 구현 __ Dev. MG_files
  - https://devmg.tistory.com/127
+
+ajax로 파일 업로드
+ - https://offbyone.tistory.com/69
