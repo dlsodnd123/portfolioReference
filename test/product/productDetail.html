@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/372f53c69c.js" crossorigin="anonymous"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="../js/jquery.validate.js"></script>
+    <script src="../js/additional-methods.js"></script>   
+    <style>
+        .w3-content{
+            display: inline-block;
+        }
+        .top-line{
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid black;
+        }
+        .top-line::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .mySlides {
+            display:none;
+            width: 480px;
+            height: 480px;
+        }
+        .left-box{
+            float: left;
+        }
+        .right-box{
+            float: left;
+            vertical-align: top;
+            padding-left: 25px;
+            width: 55%;
+            height: 480px;
+        }
+        .right-box .top-box{
+            border-bottom: 1px solid #dae0e5;
+            margin-bottom: 20px;
+        }
+        .right-box .top-box .title{
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .right-box .top-box .price{
+            display: inline-block;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .right-box .middle-box .info-box{
+            margin-bottom: 35px;
+        }
+        .right-box .middle-box .info{
+            display: inline-block;
+            font-size: 14px;
+            padding-right: 12px;
+            border-right: 1px solid #dae0e5;
+        }
+        .right-box .middle-box .info:last-child{
+            border: none;
+        }
+        .right-box .middle-box .deal-box{
+            margin-bottom: 12px;
+        }
+        .right-box .middle-box .deal,
+        .right-box .middle-box .category{
+            display: inline-block;
+            font-size: 16px;
+        }
+        .right-box .middle-box .title{
+            color: #808080;
+            padding-right: 25px;
+        }
+        .right-box .middle-box .btn-box{
+            
+        }
+        </style>
+        <body>
+        
+        <div class="container top-line">
+            <div class="left-box">
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/7624/production/_104444203_d03fb5eb-685c-42c3-8fa2-eea0ee2dac26.jpg">
+                    <img class="mySlides" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/C444/production/_104444205_945fc269-ad0a-42af-9afa-8411117ef78b.jpg">
+                    <img class="mySlides" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/EB54/production/_104444206_dafd04d6-141c-462b-aa86-c1e1158710f2.jpg">
+                    <img class="mySlides" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/16084/production/_104444209_60492da3-170f-4230-8842-1114b4d982ee.jpg">
+                    
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="right-box">
+                <div class="top-box">
+                    <div class="title">판매되는 상품 제목</div>
+                    <div class="price">25000</div> 원
+                </div>
+                <div class="middle-box">
+                    <div class="info-box">
+                        <div class="info interest">관심 5</div>
+                        <div class="info views">조회 5</div>
+                        <div class="info registerDate">등록일 2021-02-10</div>
+                    </div>
+                    <div class="deal-box">
+                        <div class="deal title"><i class="fas fa-caret-right"></i> 거래방법</div>
+                        <div class="deal content">직거래</div>
+                    </div>
+                    <div class="category-box">
+                        <div class="category title"><i class="fas fa-caret-right"></i> 카테고리</div>
+                        <div class="category content">남성의류</div>
+                    </div>
+                    <div class="btn-box">
+                        <button type="button" class="btn btn-secondary">찜하기</button>
+                        <button type="button" class="btn btn-info">연락하기</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "inline-block";  
+        }
+        </script>
+        
+        </body>
+        </html>
+        
