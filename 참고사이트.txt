@@ -1,12 +1,18 @@
 [spring/게시판] #7 계층형 게시판(답글달기)
- - https://gangnam-americano.tistory.com/25
-
+	https://gangnam-americano.tistory.com/25
 
 스프링 Spring + 웹소켓 WebSocket 채팅 초간단 구현 __ Dev. MG_files
- - https://devmg.tistory.com/127
+	https://devmg.tistory.com/127
+
+[Spring] 웹 소켓으로 채팅구현
+	https://shj7242.github.io/2018/01/23/Spring37/
+
 
 ajax로 파일 업로드
- - https://offbyone.tistory.com/69
+	https://offbyone.tistory.com/69
 
 카카오 로그인
-https://antdev.tistory.com/36?category=807235
+	https://antdev.tistory.com/36?category=807235
+
+네이버 로그인
+	https://whitekeyboard.tistory.com/204
