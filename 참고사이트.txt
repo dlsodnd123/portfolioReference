@@ -7,6 +7,9 @@
 [Spring] 웹 소켓으로 채팅구현
 	https://shj7242.github.io/2018/01/23/Spring37/
 
+Stomp와 SockJS를 이용한 채팅방
+	https://salepark.tistory.com/76?category=945958
+
 
 ajax로 파일 업로드
 	https://offbyone.tistory.com/69
