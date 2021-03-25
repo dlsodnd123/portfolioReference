@@ -19,3 +19,6 @@ ajax로 파일 업로드
 
 네이버 로그인
 	https://whitekeyboard.tistory.com/204
+
+제이쿼리로 해당 위치로 이동시키키
+	https://jjyloves.tistory.com/25
